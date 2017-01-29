@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let sentence = "Hello im Seemu"
-        let wordsArray = sentence.componentsSeparatedByString(" ")
+        let wordsArray = sentence.components(separatedBy: " ")
         
         let wordFirst = wordsArray[0] // Hello
         let wordSecond = wordsArray[1] // im
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         print(wordThird)
         
         let name: String = "Bob Smith"
-        let wordsName = name.componentsSeparatedByString(" ")
+        let wordsName = name.components(separatedBy: " ")
         
         let firstName = wordsName[0]
         let lastName = wordsName[1]
